@@ -23,8 +23,8 @@
         }
 
         .poster-container {
-            width: 100%;
-            height: 100%;
+            width: 841mm;
+            height: 1189mm;
             background: white;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             border-radius: 15px;
@@ -61,22 +61,47 @@
             opacity: 0.9;
         }
 
-        .main-content {
+        .content-section {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 40px;
-            padding: 60px;
+            padding: 40px 60px;
             background: #f8f9fa;
+        }
+
+        .images-section {
+            background: #ffffff;
+            padding: 40px 60px;
             flex: 1;
         }
 
-        .left-column {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
+        .images-title {
+            background: linear-gradient(135deg, #005EB8 0%, #003087 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 2.5em;
+            font-weight: 800;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
         }
 
-        .right-column {
+        .images-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .images-row-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .column {
             display: flex;
             flex-direction: column;
             gap: 25px;
@@ -339,15 +364,26 @@
         }
 
         .image-container {
-            margin: 18px 0;
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         .image-caption {
             text-align: center;
             margin-top: 10px;
-            font-size: 1.1em;
+            font-size: 1.2em;
             color: #666;
             font-style: italic;
+            font-weight: 600;
         }
 
         .footer {
@@ -398,10 +434,10 @@
             <p class="affiliations">¹Loughborough University | ²Health Services Safety Investigations Body, UK</p>
         </div>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Left Column -->
-            <div class="left-column">
+        <!-- Content Section -->
+        <div class="content-section">
+            <!-- Column 1 -->
+            <div class="column">
                 <div class="section">
                     <div class="section-title">Prevention of Future Death Reports</div>
                     <div class="section-content">
@@ -483,54 +519,10 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Theme Distribution Charts -->
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themedistribution.png" alt="Theme Distribution" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 1: Top 15 Theme Distribution by Year</div>
-                </div>
-
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themecoocccdistribution.png" alt="Theme Co-occurrence" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 2: Top 15 Theme Co-occurrence Network</div>
-                </div>
-
-                <!-- Interface at bottom of first column -->
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture4.png" alt="PFD Analysis Interface" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 3: UK Judiciary PFD Reports Analysis Dashboard Interface</div>
-                </div>
             </div>
 
-            <!-- Right Column -->
-            <div class="right-column">
-                <!-- Case Study Images Vertically -->
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture1.png" alt="Eclipse Morrison PFD Report Analysis" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 4: I-SIRch Tool Analysis - Eclipse Morrison Case Study</div>
-                </div>
-
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture2.png" alt="Highlighted Text Analysis" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 5: Text Analysis & Framework Mapping - Case Study Results</div>
-                </div>
-
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture3.png" alt="Framework Analysis Details" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 6: Multi-Framework Theme Analysis - Case Study Results</div>
-                </div>
-
-                <!-- Regional Analysis Charts -->
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Region.png" alt="Regional Analysis" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 7: Regional Distribution Analysis</div>
-                </div>
-
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/region2.png" alt="Regional Analysis 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 8: Detailed Regional Distribution</div>
-                </div>
-
+            <!-- Column 2 -->
+            <div class="column">
                 <div class="section">
                     <div class="section-title">Framework Development</div>
                     <div class="section-content">
@@ -593,7 +585,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <!-- Column 3 -->
+            <div class="column">
                 <div class="section">
                     <div class="section-title">Technical Implementation</div>
                     <div class="section-content">
@@ -699,16 +694,63 @@
             </div>
         </div>
 
+        <!-- All Images Section at Bottom -->
+        <div class="images-section">
+            <div class="images-title">Research Results & Analysis</div>
+            
+            <!-- First Row of Images -->
+            <div class="images-grid">
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themedistribution.png" alt="Theme Distribution">
+                    <div class="image-caption">Figure 1: Top 15 Theme Distribution by Year</div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themecoocccdistribution.png" alt="Theme Co-occurrence">
+                    <div class="image-caption">Figure 2: Top 15 Theme Co-occurrence Network</div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture4.png" alt="PFD Analysis Interface">
+                    <div class="image-caption">Figure 3: UK Judiciary PFD Reports Analysis Dashboard</div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture1.png" alt="Eclipse Morrison Case Study">
+                    <div class="image-caption">Figure 4: I-SIRch Tool Analysis - Eclipse Morrison Case</div>
+                </div>
+            </div>
+
+            <!-- Second Row of Images -->
+            <div class="images-row-2">
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture2.png" alt="Text Analysis">
+                    <div class="image-caption">Figure 5: Text Analysis & Framework Mapping</div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture3.png" alt="Framework Analysis">
+                    <div class="image-caption">Figure 6: Multi-Framework Theme Analysis</div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Region.png" alt="Regional Analysis">
+                    <div class="image-caption">Figure 7: Regional Distribution Analysis</div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/region2.png" alt="Detailed Regional Analysis">
+                    <div class="image-caption">Figure 8: Detailed Regional Distribution</div>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
         <div class="footer">
             <div class="footer-content">
                 <strong>Funding:</strong> Jointly funded by The Health Foundation and NHS AI Lab at NHS Transformation Directorate, supported by NIHR. Project: "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006<br><br>
                 <strong>Publications:</strong> (1) I-SIRch: AI-Powered Concept Annotation Tool For Equitable Extraction And Analysis Of Safety Insights From Maternity Investigations, Int. Journal of Population Data Science, 2024 (2) Unveiling Disparities in Maternity Care: A Topic Modelling Approach, AIiH 2024, LNCS (3) Intelligent Multi-Document Summarisation for Extracting Insights on Racial Inequalities, AIiH 2024, LNCS<br><br>
                 <strong>Contact:</strong> g.cosma@lboro.ac.uk | <strong>Data:</strong> Publicly accessible coroners' reports from UK Judiciary website | <strong>Ethics:</strong> No ethical approval required for public data analysis
-            </div>
-            <div class="qr-placeholder">
-                <div style="font-size: 3em; color: #6c757d;">📱</div>
-                <div class="qr-text">QR Code<br>Full References</div>
             </div>
         </div>
     </div>
