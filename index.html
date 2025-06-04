@@ -63,14 +63,20 @@
 
         .main-content {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 40px;
             padding: 60px;
             background: #f8f9fa;
             flex: 1;
         }
 
-        .column {
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .right-column {
             display: flex;
             flex-direction: column;
             gap: 25px;
@@ -388,8 +394,14 @@
 
         <!-- Main Content -->
         <div class="main-content">
-            <!-- Column 1: PFD Reports Information -->
-            <div class="column">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Interface First -->
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture4.png" alt="PFD Analysis Interface" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="image-caption">Figure 1: UK Judiciary PFD Reports Analysis Dashboard Interface</div>
+                </div>
+
                 <div class="section">
                     <div class="section-title">Prevention of Future Death Reports</div>
                     <div class="section-content">
@@ -472,14 +484,47 @@
                     </div>
                 </div>
 
+                <!-- Theme Distribution Charts -->
                 <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture1.png" alt="Eclipse Morrison PFD Report Analysis" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 1: I-SIRch Tool Analysis - Eclipse Morrison Case Study</div>
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themedistribution.png" alt="Theme Distribution" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="image-caption">Figure 2: Top 15 Theme Distribution by Year</div>
+                </div>
+
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themecoocccdistribution.png" alt="Theme Co-occurrence" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="image-caption">Figure 3: Top 15 Theme Co-occurrence Network</div>
                 </div>
             </div>
 
-            <!-- Column 2: I-SIRch Framework -->
-            <div class="column">
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Case Study Images Vertically -->
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture1.png" alt="Eclipse Morrison PFD Report Analysis" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="image-caption">Figure 4: I-SIRch Tool Analysis - Eclipse Morrison Case Study</div>
+                </div>
+
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture2.png" alt="Highlighted Text Analysis" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="image-caption">Figure 5: Text Analysis & Framework Mapping - Case Study Results</div>
+                </div>
+
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture3.png" alt="Framework Analysis Details" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="image-caption">Figure 6: Multi-Framework Theme Analysis - Case Study Results</div>
+                </div>
+
+                <!-- Regional Analysis Charts -->
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Region.png" alt="Regional Analysis" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="image-caption">Figure 7: Regional Distribution Analysis</div>
+                </div>
+
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/region2.png" alt="Regional Analysis 2" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="image-caption">Figure 8: Detailed Regional Distribution</div>
+                </div>
+
                 <div class="section">
                     <div class="section-title">Framework Development</div>
                     <div class="section-content">
@@ -501,55 +546,6 @@
                     </div>
                 </div>
 
-                <div class="section">
-                    <div class="section-title">I-SIRch Framework</div>
-                    <div class="section-content">
-                        <div class="highlight-box">
-                            <strong>I-SIRch:</strong> AI-powered tool for extracting and analysing insights from maternity incident investigation reports using sociotechnical systems approach.
-                        </div>
-
-                        <p><strong>Five I-SIRch Categories:</strong></p>
-                        <div class="frameworks-list">
-                            <div class="framework-item">
-                                <span class="framework-number">1.</span> <strong>Person factors:</strong> Staff characteristics, decision errors, slips/lapses
-                            </div>
-                            <div class="framework-item">
-                                <span class="framework-number">2.</span> <strong>Job/Task factors:</strong> Care planning, monitoring, risk assessment
-                            </div>
-                            <div class="framework-item">
-                                <span class="framework-number">3.</span> <strong>Organisation factors:</strong> Communication, teamworking, guidance
-                            </div>
-                            <div class="framework-item">
-                                <span class="framework-number">4.</span> <strong>Technologies & Tools:</strong> Equipment issues, interpretation
-                            </div>
-                            <div class="framework-item">
-                                <span class="framework-number">5.</span> <strong>Environment factors:</strong> Physical layout, acuity, external pressures
-                            </div>
-                        </div>
-
-                        <div class="key-finding">
-                            <strong>I-SIRch Validation:</strong> Cross-ethnic performance testing and synthetic data validation ensures equitable AI analysis across all demographic groups.
-                        </div>
-
-                        <p><strong>Ethnicity Distribution (HSIB Data):</strong></p>
-                        <ul>
-                            <li>White British: 688 reports (75.1%)</li>
-                            <li>Asian: 87 reports (9.5%)</li>
-                            <li>Black: 81 reports (8.9%)</li>
-                            <li>Other White: 46 reports (5.0%)</li>
-                            <li>Mixed Background: 13 reports (1.4%)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture2.png" alt="Highlighted Text Analysis" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 2: Text Analysis & Framework Mapping - Case Study Results</div>
-                </div>
-            </div>
-
-            <!-- Column 3: Technical Implementation & Comparison -->
-            <div class="column">
                 <div class="section">
                     <div class="section-title">PFD vs HSIB Comparison</div>
                     <div class="section-content">
@@ -590,11 +586,6 @@
                             <strong>Key Differences:</strong> PFD reports emphasise medication safety and consent/agency issues more prominently, while HSIB focuses on communication and teamworking.
                         </div>
                     </div>
-                </div>
-
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture3.png" alt="Framework Analysis Details" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 3: Multi-Framework Theme Analysis - Case Study Results</div>
                 </div>
 
                 <div class="section">
@@ -662,34 +653,19 @@
                             </div>
                         </div>
 
-                        <p><strong>Technical Specifications:</strong></p>
+                        <div class="key-finding">
+                            <strong>I-SIRch Validation:</strong> Cross-ethnic performance testing and synthetic data validation ensures equitable AI analysis across all demographic groups.
+                        </div>
+
+                        <p><strong>Ethnicity Distribution (HSIB Data):</strong></p>
                         <ul>
-                            <li><strong>Confidence Scores:</strong> High (≥0.8), Medium (0.65-0.8), Low (<0.65)</li>
-                            <li><strong>Contextual Window Analysis:</strong> Text surrounding keyword matches</li>
-                            <li><strong>Redundancy Reduction:</strong> Prevents theme duplication</li>
-                            <li><strong>Multi-Framework Integration:</strong> Simultaneous analysis across I-SIRch, Black Maternal Health, and Extended Safety frameworks</li>
+                            <li>White British: 688 reports (75.1%)</li>
+                            <li>Asian: 87 reports (9.5%)</li>
+                            <li>Black: 81 reports (8.9%)</li>
+                            <li>Other White: 46 reports (5.0%)</li>
+                            <li>Mixed Background: 13 reports (1.4%)</li>
                         </ul>
-
-                        <div class="key-finding">
-                            <strong>Data Protection:</strong> Combination of offline processing for sensitive data and online processing for non-sensitive data using advanced encryption and secure protocols.
-                        </div>
-
-                        <div class="highlight-box">
-                            <strong>Validation Testing:</strong><br>
-                            • Test A: Model trained on real data, tested on synthetic data<br>
-                            • Test C: Model trained on multiple real batches, tested on synthetic data<br>
-                            • Cross-ethnic performance evaluation ensures equitable analysis
-                        </div>
-
-                        <div class="key-finding">
-                            <strong>I-SIRch Validation Results:</strong> Performance evaluation demonstrates consistent accuracy across ethnic groups. Test A and Test C show comparable results when models trained on real data (Batches 1-3) are tested on synthetic data (Batch 4), confirming robust cross-demographic performance.
-                        </div>
                     </div>
-                </div>
-
-                <div class="image-container">
-                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture4.png" alt="PFD Analysis Interface" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <div class="image-caption">Figure 4: UK Judiciary PFD Reports Analysis Dashboard Interface</div>
                 </div>
 
                 <div class="section">
