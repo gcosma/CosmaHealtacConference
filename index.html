@@ -394,6 +394,23 @@
             line-height: 1.4;
         }
 
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .qr-placeholder {
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        .qr-text {
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+
         ul {
             padding-left: 20px;
             margin: 12px 0;
@@ -749,9 +766,15 @@
         <!-- Footer -->
         <div class="footer">
             <div class="footer-content">
-                <strong>Funding:</strong> Jointly funded by The Health Foundation and NHS AI Lab at NHS Transformation Directorate, supported by NIHR. Project: "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006<br><br>
-                <strong>Publications:</strong> (1) I-SIRch: AI-Powered Concept Annotation Tool For Equitable Extraction And Analysis Of Safety Insights From Maternity Investigations, Int. Journal of Population Data Science, 2024 (2) Unveiling Disparities in Maternity Care: A Topic Modelling Approach, AIiH 2024, LNCS (3) Intelligent Multi-Document Summarisation for Extracting Insights on Racial Inequalities, AIiH 2024, LNCS<br><br>
-                <strong>Contact:</strong> g.cosma@lboro.ac.uk | <strong>Data:</strong> Publicly accessible coroners' reports from UK Judiciary website | <strong>Ethics:</strong> No ethical approval required for public data analysis
+                <div>
+                    <strong>Funding:</strong> Jointly funded by The Health Foundation and NHS AI Lab at NHS Transformation Directorate, supported by NIHR. Project: "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006<br><br>
+                    <strong>Publications:</strong> (1) I-SIRch: AI-Powered Concept Annotation Tool For Equitable Extraction And Analysis Of Safety Insights From Maternity Investigations, Int. Journal of Population Data Science, 2024 (2) Unveiling Disparities in Maternity Care: A Topic Modelling Approach, AIiH 2024, LNCS (3) Intelligent Multi-Document Summarisation for Extracting Insights on Racial Inequalities, AIiH 2024, LNCS<br><br>
+                    <strong>Contact:</strong> g.cosma@lboro.ac.uk | <strong>Data:</strong> Publicly accessible coroners' reports from UK Judiciary website | <strong>Ethics:</strong> No ethical approval required for public data analysis
+                </div>
+                <div class="qr-placeholder">
+                    <div style="font-size: 3em; color: #6c757d;">📱</div>
+                    <div class="qr-text">QR Code<br>Full References</div>
+                </div>
             </div>
         </div>
     </div>
