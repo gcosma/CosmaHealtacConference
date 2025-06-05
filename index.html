@@ -73,78 +73,11 @@
 
         .images-section {
             background: #ffffff;
-            padding: 8px 25px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            max-height: 250px;
-        }
-
-        .images-title {
-            background: linear-gradient(135deg, #005EB8 0%, #003087 100%);
-            color: white;
-            padding: 6px;
-            border-radius: 4px;
-            font-size: 1.2em;
-            font-weight: 800;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-align: center;
-            flex-shrink: 0;
-        }
-
-        .images-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-            flex: 1;
-            min-height: 0;
-        }
-
-        .images-column {
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-            min-height: 0;
-        }
-
-        .image-container {
-            background: white;
-            border-radius: 3px;
-            padding: 3px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-            border: 1px solid #e9ecef;
-            flex: 1;
-            min-height: 0;
-            display: flex;
-            flex-direction: column;
-            max-height: 50px;
-        }
-
-        .image-container img {
-            width: 100%;
-            border-radius: 2px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-            flex: 1;
-            object-fit: contain;
-            max-height: 35px;
-        }
-
-        .image-caption {
-            text-align: center;
-            margin-top: 1px;
-            font-size: 0.5em;
-            color: #666;
-            font-style: italic;
-            font-weight: 600;
-            flex-shrink: 0;
-            line-height: 0.8;
-        };
             padding: 15px 30px;
             flex: 1;
             display: flex;
             flex-direction: column;
+            max-height: 280px;
         }
 
         .images-title {
@@ -163,7 +96,7 @@
 
         .images-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
             flex: 1;
             min-height: 0;
@@ -796,12 +729,12 @@
             </div>
         </div>
 
-        <!-- All Images Section at Bottom -->
+        <!-- All Images Section at Bottom - Now 3 Columns -->
         <div class="images-section">
             <div class="images-title">Research Results & Analysis</div>
             
             <div class="images-container">
-                <!-- Left Column: Case Study Images (1, 2, 3) -->
+                <!-- Column 1: Figures 1 & 2 -->
                 <div class="images-column">
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture1.png" alt="Eclipse Morrison Case Study">
@@ -812,33 +745,31 @@
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture2.png" alt="Text Analysis">
                         <div class="image-caption">Figure 2: Text Analysis & Framework Mapping</div>
                     </div>
-                    
-                    <div class="image-container">
-                        <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture3.png" alt="Framework Analysis">
-                        <div class="image-caption">Figure 3: Multi-Framework Theme Analysis</div>
-                    </div>
                 </div>
 
-                <!-- Right Column: Charts -->
+                <!-- Column 2: Figures 4 & 5 -->
                 <div class="images-column">
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Region.png" alt="Regional Analysis">
-                        <div class="image-caption">Figure 4: Regional Distribution Analysis</div>
+                        <div class="image-caption">Figure 3: Regional Distribution Analysis</div>
                     </div>
                     
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/region2.png" alt="Detailed Regional Analysis">
-                        <div class="image-caption">Figure 5: Detailed Regional Distribution</div>
+                        <div class="image-caption">Figure 4: Detailed Regional Distribution</div>
                     </div>
-                    
+                </div>
+
+                <!-- Column 3: Figures 6 & 7 -->
+                <div class="images-column">
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themecoocccdistribution.png" alt="Theme Co-occurrence">
-                        <div class="image-caption">Figure 6: Top 15 Theme Co-occurrence Network</div>
+                        <div class="image-caption">Figure 5: Top 15 Theme Co-occurrence Network</div>
                     </div>
                     
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themedistribution.png" alt="Theme Distribution">
-                        <div class="image-caption">Figure 7: Top 15 Theme Distribution by Year</div>
+                        <div class="image-caption">Figure 6: Top 15 Theme Distribution by Year</div>
                     </div>
                 </div>
             </div>
