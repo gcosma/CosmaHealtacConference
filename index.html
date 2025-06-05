@@ -383,6 +383,16 @@
             flex-direction: column;
         }
 
+        .image-container.small {
+            flex: 0.4;
+            min-height: 100px;
+        }
+
+        .image-container.large {
+            flex: 1.2;
+            min-height: 180px;
+        }
+
         .image-container img {
             width: 100%;
             border-radius: 6px;
@@ -390,6 +400,14 @@
             flex: 1;
             object-fit: contain;
             min-height: 120px;
+        }
+
+        .image-container.small img {
+            min-height: 80px;
+        }
+
+        .image-container.large img {
+            min-height: 140px;
         }
 
         .image-caption {
@@ -735,43 +753,48 @@
             <div class="images-title">Research Results & Analysis</div>
             
             <div class="images-container">
-                <!-- Column 1: Figures 1, 2 & 3 -->
+                <!-- Column 1: Figures 1, 2, 3 & 4 -->
                 <div class="images-column">
-                    <div class="image-container">
+                    <div class="image-container small">
+                        <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture4.png" alt="Picture 4">
+                        <div class="image-caption">Figure 1: Picture 4 Analysis</div>
+                    </div>
+
+                    <div class="image-container small">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture1.png" alt="Eclipse Morrison Case Study">
-                        <div class="image-caption">Figure 1: I-SIRch Tool Analysis - Eclipse Morrison Case</div>
+                        <div class="image-caption">Figure 2: I-SIRch Tool Analysis - Eclipse Morrison Case</div>
                     </div>
                     
-                    <div class="image-container">
+                    <div class="image-container large">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture2.png" alt="Text Analysis">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture3.png" alt="Multi-Framework Theme Analysis">
-                        <div class="image-caption">Figure 2: Text Analysis & Framework Mapping</div>
+                        <div class="image-caption">Figure 3: Text Analysis & Framework Mapping</div>
                     </div>
                 </div>
 
-                <!-- Column 2: Figures 3 & 4 -->
+                <!-- Column 2: Figures 4 & 5 -->
                 <div class="images-column">
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Region.png" alt="Regional Analysis">
-                        <div class="image-caption">Figure 3: Regional Distribution Analysis</div>
+                        <div class="image-caption">Figure 4: Regional Distribution Analysis</div>
                     </div>
                     
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/region2.png" alt="Detailed Regional Analysis">
-                        <div class="image-caption">Figure 4: Detailed Regional Distribution</div>
+                        <div class="image-caption">Figure 5: Detailed Regional Distribution</div>
                     </div>
                 </div>
 
-                <!-- Column 3: Figures 5 & 6 -->
+                <!-- Column 3: Figures 6 & 7 -->
                 <div class="images-column">
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themecooccdistribution.png" alt="Theme Co-occurrence">
-                        <div class="image-caption">Figure 5: Top 15 Theme Co-occurrence Network</div>
+                        <div class="image-caption">Figure 6: Top 15 Theme Co-occurrence Network</div>
                     </div>
                     
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themedistribution.png" alt="Theme Distribution">
-                        <div class="image-caption">Figure 6: Top 15 Theme Distribution by Year</div>
+                        <div class="image-caption">Figure 7: Top 15 Theme Distribution by Year</div>
                     </div>
                 </div>
             </div>
