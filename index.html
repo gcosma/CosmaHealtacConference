@@ -424,9 +424,9 @@
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
             padding: 15px 20px;
-            font-size: 0.8em;
+            font-size: 1.1em;
             text-align: center;
-            line-height: 1.3;
+            line-height: 1.4;
             flex-shrink: 0;
         }
 
@@ -510,12 +510,12 @@
                                 <span class="stat-text">PFD Reports</span>
                             </div>
                             <div class="stat-mini">
-                                <span class="stat-num">3</span>
-                                <span class="stat-text">Frameworks</span>
+                                <span class="stat-num">UK</span>
+                                <span class="stat-text">Judiciary Data</span>
                             </div>
                             <div class="stat-mini">
-                                <span class="stat-num">78.4%</span>
-                                <span class="stat-text">Top Themes</span>
+                                <span class="stat-num">2014-2025</span>
+                                <span class="stat-text">Study Period</span>
                             </div>
                         </div>
 
@@ -637,11 +637,11 @@
                         </div>
 
                         <div class="highlight-box">
-                            <strong>Consistent Finding:</strong> Both reporting systems identified staff decision errors as significant factors (41.2% vs 47.3%), suggesting consistent recognition of human judgement factors in maternity incidents.
+                            <strong>Judicial vs Investigatory Focus:</strong> Coroners emphasise medication protocols and patient autonomy, reflecting legal accountability concerns, while investigators prioritise team communication and coordination processes.
                         </div>
 
                         <div class="key-finding">
-                            <strong>Key Differences:</strong> PFD reports emphasise medication safety and consent/agency issues more prominently, while HSIB focuses on communication and teamworking.
+                            <strong>Cross-System Validation:</strong> Both reporting systems recognise human judgement factors as significant, confirming consistent identification of staff decision-making challenges across different assessment approaches.
                         </div>
                     </div>
                 </div>
@@ -650,81 +650,82 @@
             <!-- Column 3 -->
             <div class="column">
                 <div class="section">
-                    <div class="section-title">Technical Implementation</div>
+                    <div class="section-title">Technical Architecture</div>
                     <div class="section-content">
                         <div class="highlight-box">
-                            <strong>Enhanced Clinical BERT Analyser:</strong> Bio_ClinicalBERT model with dual-component scoring system combining semantic similarity (70% weight) with keyword matching density (30% weight).
+                            <strong>Multi-Framework Analysis:</strong> Simultaneous theme detection across three frameworks (I-SIRch, House of Commons, Extended Analysis) with contextual window analysis and sentence-level keyword highlighting for interpretability.
                         </div>
 
                         <div class="pipeline-box">
-                            <div class="pipeline-title">🔧 Processing Pipeline</div>
+                            <div class="pipeline-title">🔧 ML Pipeline Architecture</div>
                             <div class="pipeline-steps">
                                 <div class="pipeline-step">
                                     <div class="step-number">1</div>
-                                    <div>Data Scraping</div>
+                                    <div>Web Scraping (BeautifulSoup4)</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">2</div>
-                                    <div>Text Preprocessing</div>
+                                    <div>NLP Preprocessing (NLTK)</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">3</div>
-                                    <div>AI Analysis</div>
+                                    <div>BERT Embeddings</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">4</div>
-                                    <div>Topic Modelling</div>
+                                    <div>Cosine Similarity</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">5</div>
-                                    <div>Classification</div>
+                                    <div>Threshold Classification</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">6</div>
-                                    <div>Visualisation</div>
+                                    <div>Confidence Scoring</div>
                                 </div>
                             </div>
                         </div>
 
-                        <p><strong>Core Technologies:</strong></p>
+                        <p><strong>Core Technical Stack:</strong></p>
                         <div class="tech-grid">
                             <div class="tech-item">
                                 <div class="tech-icon">🤖</div>
                                 <div class="tech-content">
-                                    <strong>Bio_ClinicalBERT:</strong> 768D clinical text embeddings
+                                    <strong>Transformers:</strong> HuggingFace Bio_ClinicalBERT tokenizer & model
                                 </div>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">🧠</div>
+                                <div class="tech-icon">🧮</div>
                                 <div class="tech-content">
-                                    <strong>Claude 3 Opus:</strong> Multi-document summarisation
+                                    <strong>NumPy/PyTorch:</strong> Tensor operations & similarity calculations
                                 </div>
                             </div>
                             <div class="tech-item">
                                 <div class="tech-icon">📊</div>
                                 <div class="tech-content">
-                                    <strong>NetworkX:</strong> Graph analysis algorithms
+                                    <strong>Scikit-learn:</strong> Cosine similarity & clustering algorithms
                                 </div>
                             </div>
                             <div class="tech-item">
-                                <div class="tech-icon">📈</div>
+                                <div class="tech-icon">🐍</div>
                                 <div class="tech-content">
-                                    <strong>Plotly:</strong> Interactive dashboards
+                                    <strong>Python Libraries:</strong> Pandas data processing, regex text cleaning
                                 </div>
                             </div>
                         </div>
 
                         <div class="key-finding">
-                            <strong>I-SIRch Validation:</strong> Cross-ethnic performance testing and synthetic data validation ensures equitable AI analysis across all demographic groups.
+                            <strong>Algorithm Specifications:</strong> Dual-scoring system: 70% semantic similarity weight + 30% keyword density. Confidence thresholds: High (≥0.7), Medium (0.5-0.7), Low (<0.5).
                         </div>
 
-                        <p><strong>Ethnicity Distribution (HSIB Data):</strong></p>
+                        <p><strong>Data Processing Pipeline:</strong></p>
                         <ul>
-                            <li>White British: 688 reports (75.1%)</li>
-                            <li>Asian: 87 reports (9.5%)</li>
-                            <li>Black: 81 reports (8.9%)</li>
-                            <li>Other White: 46 reports (5.0%)</li>
-                            <li>Mixed Background: 13 reports (1.4%)</li>
+                            <li>Text preprocessing with regex normalisation & stop-word removal</li>
+                            <li>BERT tokenisation with 512-token truncation and padding</li>
+                            <li>768-dimensional embeddings via Bio_ClinicalBERT CLS token representation</li>
+                            <li>Keyword matching with sentence boundary detection for highlighting</li>
+                            <li>Dual similarity scoring: cosine similarity + keyword density weighting</li>
+                            <li>Multi-framework threshold classification with confidence scoring</li>
                         </ul>
                     </div>
                 </div>
@@ -733,7 +734,7 @@
                     <div class="section-title">Conclusions & Impact</div>
                     <div class="section-content">
                         <div class="highlight-box">
-                            <strong>Clinical Implications:</strong> PFD reports highlight medication safety as primary judicial concern, with strong emphasis on consent/agency issues unique to coroner investigations.
+                            <strong>Clinical Implications:</strong> Judicial assessments reveal distinct safety priorities focused on legal accountability and patient rights, providing unique insights complementary to traditional incident investigation approaches.
                         </div>
 
                         <div class="key-finding">
@@ -741,8 +742,6 @@
                         </div>
 
                         <p><strong>Study Limitations:</strong> Ethnicity data was not available in the PFD reports, preventing evaluation of theme performance across different ethnic groups.</p>
-
-                        <p><strong>Research Impact:</strong> This work establishes PFD reports as a valuable complementary data source for understanding judicial perspectives on maternity safety incidents.</p>
                     </div>
                 </div>
             </div>
@@ -805,8 +804,7 @@
             <div class="footer-content">
                 <div>
                     <strong>Funding:</strong> Jointly funded by The Health Foundation and NHS AI Lab at NHS Transformation Directorate, supported by NIHR. Project: "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006<br><br>
-                    <strong>Publications:</strong> (1) I-SIRch: AI-Powered Concept Annotation Tool For Equitable Extraction And Analysis Of Safety Insights From Maternity Investigations, Int. Journal of Population Data Science, 2024 (2) Unveiling Disparities in Maternity Care: A Topic Modelling Approach, AIiH 2024, LNCS (3) Intelligent Multi-Document Summarisation for Extracting Insights on Racial Inequalities, AIiH 2024, LNCS<br><br>
-                    <strong>Contact:</strong> g.cosma@lboro.ac.uk | <strong>Data:</strong> Publicly accessible coroners' reports from UK Judiciary website | <strong>Ethics:</strong> No ethical approval required for public data analysis
+                    <strong>Contact:</strong> Georgina Cosma - g.cosma@lboro.ac.uk | <strong>Data:</strong> Publicly accessible coroners' reports from UK Judiciary website | <strong>Ethics:</strong> No ethical approval required for public data analysis
                 </div>
                 <div class="qr-placeholder">
                     <div style="font-size: 3em; color: #6c757d;">📱</div>
