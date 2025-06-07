@@ -256,27 +256,34 @@
             border-radius: 12px;
             overflow: hidden;
             margin: 18px 0;
-            font-size: 0.9em;
+            font-size: 0.85em;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         .comparison-header {
             background: linear-gradient(135deg, #005EB8 0%, #003087 100%);
             color: white;
-            padding: 12px 15px;
+            padding: 15px;
             font-weight: bold;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px;
+            gap: 20px;
             text-align: center;
+            font-size: 1.1em;
         }
 
         .comparison-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            padding: 6px 15px;
+            gap: 20px;
+            padding: 12px 15px;
             border-bottom: 1px solid #f0f0f0;
             align-items: center;
+            transition: background-color 0.2s ease;
+        }
+
+        .comparison-row:hover {
+            background: #f8f9fa;
         }
 
         .comparison-row:last-child {
@@ -284,21 +291,52 @@
         }
 
         .comparison-row:nth-child(even) {
-            background: #f8f9fa;
+            background: #fafbfc;
+        }
+
+        .comparison-row:nth-child(even):hover {
+            background: #f0f2f5;
         }
 
         .comparison-cell {
             text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 1.3;
+        }
+
+        .comparison-theme {
+            flex: 1;
+            font-weight: 500;
         }
 
         .comparison-percent {
             font-weight: bold;
-            color: #003087;
-            background: rgba(0,94,184,0.1);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.85em;
-            margin-left: 8px;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            margin-left: 10px;
+            min-width: 45px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .comparison-percent.high {
+            background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+        }
+
+        .comparison-percent.medium-high {
+            background: linear-gradient(135deg, #005EB8 0%, #003087 100%);
+        }
+
+        .comparison-percent.medium {
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+        }
+
+        .comparison-percent.low {
+            background: linear-gradient(135deg, #f44336 0%, #c62828 100%);
         }
 
         .tech-grid {
@@ -529,9 +567,14 @@
                         </div>
 
                         <div class="key-finding">
-                            <strong>Research Gap:</strong> Maternal and neonatal deaths have not been systematically analysed across PFD reports despite persistent disparities in maternal mortality.
+                            <strong>Research Question:</strong> What do Prevention of Future Death reports reveal about the key safety themes and system-level failures in UK maternity care, and how can automated multi-framework analysis enhance patient safety intelligence?
                         </div>
+                    </div>
+                </div>
 
+                <div class="section">
+                    <div class="section-title">Data</div>
+                    <div class="section-content">
                         <div class="stats-row">
                             <div class="stat-mini">
                                 <span class="stat-num">51</span>
@@ -590,44 +633,104 @@
                                 <div><strong>HSIB reports (n=188)</strong></div>
                             </div>
                             <div class="comparison-row">
-                                <div class="comparison-cell">Medication Safety (*) <span class="comparison-percent">78.4%</span></div>
-                                <div class="comparison-cell">Communication Factor <span class="comparison-percent">84.6%</span></div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Medication Safety (*)</span>
+                                    <span class="comparison-percent high">78.4%</span>
+                                </div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Communication Factor</span>
+                                    <span class="comparison-percent high">84.6%</span>
+                                </div>
                             </div>
                             <div class="comparison-row">
-                                <div class="comparison-cell">Staff Performance (+) <span class="comparison-percent">78.4%</span></div>
-                                <div class="comparison-cell">Teamworking <span class="comparison-percent">82.4%</span></div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Staff Performance (+)</span>
+                                    <span class="comparison-percent high">78.4%</span>
+                                </div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Teamworking</span>
+                                    <span class="comparison-percent high">82.4%</span>
+                                </div>
                             </div>
                             <div class="comparison-row">
-                                <div class="comparison-cell">Team Culture (+) <span class="comparison-percent">74.5%</span></div>
-                                <div class="comparison-cell">Assessment Investigation <span class="comparison-percent">79.8%</span></div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Team Culture (+)</span>
+                                    <span class="comparison-percent high">74.5%</span>
+                                </div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Assessment Investigation</span>
+                                    <span class="comparison-percent high">79.8%</span>
+                                </div>
                             </div>
                             <div class="comparison-row">
-                                <div class="comparison-cell">Informed consent/agency (-) <span class="comparison-percent">66.7%</span></div>
-                                <div class="comparison-cell">Patient physical characteristics <span class="comparison-percent">62.8%</span></div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Informed consent/agency (-)</span>
+                                    <span class="comparison-percent medium-high">66.7%</span>
+                                </div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Patient physical characteristics</span>
+                                    <span class="comparison-percent medium-high">62.8%</span>
+                                </div>
                             </div>
                             <div class="comparison-row">
-                                <div class="comparison-cell">Diagnostic Testing & Specimens (*) <span class="comparison-percent">64.7%</span></div>
-                                <div class="comparison-cell">Staff-Slip or Lapse <span class="comparison-percent">52.7%</span></div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Diagnostic Testing & Specimens (*)</span>
+                                    <span class="comparison-percent medium-high">64.7%</span>
+                                </div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Staff-Slip or Lapse</span>
+                                    <span class="comparison-percent medium">52.7%</span>
+                                </div>
                             </div>
                             <div class="comparison-row">
-                                <div class="comparison-cell">Patient Record Attendance (+) <span class="comparison-percent">62.7%</span></div>
-                                <div class="comparison-cell">Escalation/Referral Factor <span class="comparison-percent">51.6%</span></div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Patient Record Attendance (+)</span>
+                                    <span class="comparison-percent medium-high">62.7%</span>
+                                </div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Escalation/Referral Factor</span>
+                                    <span class="comparison-percent medium">51.6%</span>
+                                </div>
                             </div>
                             <div class="comparison-row">
-                                <div class="comparison-cell">Physical Layout & Environment (+) <span class="comparison-percent">56.9%</span></div>
-                                <div class="comparison-cell">National & Local Guidance <span class="comparison-percent">48.9%</span></div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Physical Layout & Environment (+)</span>
+                                    <span class="comparison-percent medium">56.9%</span>
+                                </div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">National & Local Guidance</span>
+                                    <span class="comparison-percent medium">48.9%</span>
+                                </div>
                             </div>
                             <div class="comparison-row">
-                                <div class="comparison-cell">Staff Decision Error (+) <span class="comparison-percent">41.2%</span></div>
-                                <div class="comparison-cell">Technologies & Tools-Interpretation <span class="comparison-percent">47.9%</span></div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Staff Decision Error (+)</span>
+                                    <span class="comparison-percent low">41.2%</span>
+                                </div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Technologies & Tools-Interpretation</span>
+                                    <span class="comparison-percent medium">47.9%</span>
+                                </div>
                             </div>
                             <div class="comparison-row">
-                                <div class="comparison-cell">Peer Support & Supervision (*) <span class="comparison-percent">39.2%</span></div>
-                                <div class="comparison-cell">Obstetric Review <span class="comparison-percent">47.3%</span></div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Peer Support & Supervision (*)</span>
+                                    <span class="comparison-percent low">39.2%</span>
+                                </div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Obstetric Review</span>
+                                    <span class="comparison-percent medium">47.3%</span>
+                                </div>
                             </div>
                             <div class="comparison-row">
-                                <div class="comparison-cell">External Societal Factor (+) <span class="comparison-percent">39.2%</span></div>
-                                <div class="comparison-cell">Staff Decision Error <span class="comparison-percent">47.3%</span></div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">External Societal Factor (+)</span>
+                                    <span class="comparison-percent low">39.2%</span>
+                                </div>
+                                <div class="comparison-cell">
+                                    <span class="comparison-theme">Staff Decision Error</span>
+                                    <span class="comparison-percent medium">47.3%</span>
+                                </div>
                             </div>
                         </div>
 
