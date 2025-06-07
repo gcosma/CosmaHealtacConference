@@ -423,28 +423,30 @@
         .footer {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
-            padding: 15px 20px;
+            padding: 20px 30px;
             font-size: 1.1em;
-            text-align: center;
+            text-align: left;
             line-height: 1.4;
             flex-shrink: 0;
+            margin-top: auto;
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: 1fr auto;
-            gap: 20px;
+            gap: 30px;
             align-items: center;
         }
 
         .qr-placeholder {
             text-align: center;
-            opacity: 0.8;
+            opacity: 1;
         }
 
         .qr-text {
-            font-size: 0.7em;
-            margin-top: 3px;
+            font-size: 0.9em;
+            margin-top: 8px;
+            color: white;
         }
 
         ul {
@@ -669,32 +671,30 @@
                             <div class="pipeline-steps">
                                 <div class="pipeline-step">
                                     <div class="step-number">1</div>
-                                    <div><strong>🌐 Automated Web Scraping</strong><br>BeautifulSoup4 + rate-limited batch processing with PDF extraction</div>
+                                    <div><strong>🌐 Automated Web Scraping</strong><br>BeautifulSoup4 + rate-limited batch processing with PDF extraction & regex-based metadata parsing</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">2</div>
-                                    <div><strong>🔧 Intelligent Data Preparation</strong><br>Multi-file merging, deduplication, temporal extraction & content validation</div>
+                                    <div><strong>🔧 Advanced Data Preparation</strong><br>Multi-file merging, record-level deduplication, temporal extraction, missing value imputation & content validation</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">3</div>
-                                    <div><strong>📊 Exploratory Analysis</strong><br>Interactive dashboards with quality metrics & distribution visualisation</div>
+                                    <div><strong>📊 Exploratory Analysis</strong><br>Interactive dashboards with data quality validation, distribution analysis & silhouette-based cluster evaluation</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">4</div>
-                                    <div><strong>📝 Advanced Text Processing & Summarisation</strong><br>Custom vectorisation methods (TF-IDF, BM25, weighted TF-IDF schemes) with LDA topic modelling, agglomerative hierarchical clustering & template-based abstractive summarisation</div>
+                                    <div><strong>📝 Advanced Text Processing & Summarisation</strong><br>Custom vectorisation methods (TF-IDF, BM25, weighted TF-IDF schemes) with online LDA topic modelling, Ward-linkage agglomerative clustering & template-based abstractive summarisation</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">5</div>
-                                    <div><strong>🤖 Multi-Framework Concept Annotation</strong><br>Bio_ClinicalBERT 768D embeddings + 200-char contextual windows with hybrid scoring (70% semantic + 30% keyword) and adaptive thresholds (0.3-0.9) across the three frameworks</div>
+                                    <div><strong>🤖 Multi-Framework Concept Annotation</strong><br>Bio_ClinicalBERT transformer architecture with 768D contextual embeddings, sliding window attention & hybrid cosine similarity scoring (70% semantic + 30% keyword density) across three frameworks</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">6</div>
-                                    <div><strong>📈 Interactive Theme Dashboard</strong><br>Correlation analysis, temporal trends, heatmaps & three-tier confidence visualisation</div>
+                                    <div><strong>📈 Advanced Analytics Dashboard</strong><br>NetworkX graph algorithms with spring-embedded layout, correlation matrices, hierarchical clustering heatmaps & multi-format export capabilities</div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
 
@@ -713,7 +713,7 @@
                             <strong>Future directions:</strong> Development of a unified framework applicable across healthcare specialties including maternity, mental health, and other clinical domains to enable cross-specialty learning and comparative safety analysis. Integration with existing incident reporting systems could enhance cross-organisational learning from judicial investigations.
                         </div>
 
-                        <p><strong>Study Limitations:</strong> Ethnicity data was not available as PFD reports focus on systemic issues rather than demographic characteristics (mandated by Coroners and Justice Act 2009), preventing evaluation of theme performance across different ethnic groups.</p>
+                        <p><strong>Study Limitations:</strong> Ethnicity data was not available as PFD reports focus on systemic issues rather than demographic characteristics.</p>
                     </div>
                 </div>
             </div>
@@ -771,3 +771,23 @@
                         <div style="display:none; padding:20px; background:#f0f0f0; text-align:center; border-radius:6px;">Image not available<br><small>themedistribution.png</small></div>
                         <div class="image-caption">Figure 7: Top 15 Theme Distribution by Year</div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-content">
+                <div>
+                    <strong>Funding:</strong> The work was jointly funded by The Health Foundation and the NHS AI Lab at the NHS Transformation Directorate, and supported by the National Institute for Health Research. The project is entitled "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006.<br><br>
+                    <strong>Contact:</strong> Georgina Cosma - g.cosma@lboro.ac.uk | <strong>Data:</strong> Publicly accessible coroners' reports from UK Judiciary website | <strong>Ethics:</strong> No ethical approval required for public data analysis
+                </div>
+                <div class="qr-placeholder">
+                    <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/qrcode_github.png" alt="QR Code" style="width: 80px; height: 80px; border-radius: 8px;">
+                    <div class="qr-text">Scan for Papers & Code</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
