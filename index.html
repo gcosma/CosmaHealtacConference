@@ -217,7 +217,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 8px 18px;
+            padding: 6px 18px;
             border-bottom: 1px solid #f0f0f0;
             font-size: 0.95em;
         }
@@ -273,7 +273,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
-            padding: 8px 15px;
+            padding: 4px 15px;
             border-bottom: 1px solid #f0f0f0;
         }
 
@@ -314,8 +314,8 @@
         }
 
         .framework-item {
-            background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
-            border: 1px solid #9c27b0;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border: 1px solid #2196f3;
             border-radius: 10px;
             padding: 12px;
             font-size: 0.9em;
@@ -324,7 +324,7 @@
 
         .framework-number {
             font-weight: bold;
-            color: #4a148c;
+            color: #0d47a1;
         }
 
         .pipeline-box {
@@ -529,46 +529,46 @@
                         <div class="results-table">
                             <div class="table-header">Top Safety Themes in PFD Reports</div>
                             <div class="theme-row top-theme">
-                                <span>Medication Safety</span>
+                                <span>Medication Safety (*)</span>
                                 <span class="theme-percent">78.4%</span>
                             </div>
                             <div class="theme-row top-theme">
-                                <span>Person-Staff Characteristics</span>
+                                <span>Staff Performance (+)</span>
                                 <span class="theme-percent">78.4%</span>
                             </div>
                             <div class="theme-row">
-                                <span>Organisation-Team Culture</span>
+                                <span>Team Culture (+)</span>
                                 <span class="theme-percent">74.5%</span>
                             </div>
                             <div class="theme-row">
-                                <span>Consent/Agency Issues</span>
+                                <span>Consent/Agency (-)</span>
                                 <span class="theme-percent">66.7%</span>
                             </div>
                             <div class="theme-row">
-                                <span>Diagnostic Testing & Specimens</span>
+                                <span>Diagnostic Testing & Specimens (*)</span>
                                 <span class="theme-percent">64.7%</span>
                             </div>
                             <div class="theme-row">
-                                <span>Person-Patient Record Attendance</span>
+                                <span>Patient Record Attendance (+)</span>
                                 <span class="theme-percent">62.7%</span>
                             </div>
                             <div class="theme-row">
-                                <span>Internal-Physical Layout</span>
+                                <span>Physical Layout & Environment (+)</span>
                                 <span class="theme-percent">56.9%</span>
                             </div>
                             <div class="theme-row">
-                                <span>Person-Staff Decision Error</span>
+                                <span>Staff Decision Error (+)</span>
                                 <span class="theme-percent">41.2%</span>
                             </div>
                         </div>
+
+                        <p style="font-size: 0.8em; margin-top: 10px;"><strong>Framework Legend:</strong> (*) Extended Analysis, (+) I-SIRch, (-) House of Commons Report</p>
 
                         <div class="key-finding">
                             <strong>Key Finding:</strong> Medication Safety and Staff Characteristics are joint highest priorities in judicial assessments of maternity deaths.
                         </div>
 
-                        <div class="highlight-box">
-                            <strong>Equity Framework Results:</strong> Themes from UK House of Commons Black Maternal Healthcare Report prominently identified - Consent/Agency (66.7%), Guidance gaps (37.3%), Care quality issues (31.4%).
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -581,68 +581,80 @@
                         <p><strong>Three Complementary Frameworks:</strong></p>
                         
                         <div class="framework-item">
-                            <span class="framework-number">1.</span> <strong>Serious Incident Research Framework (I-SIRch):</strong> Sociotechnical categories developed for maternity safety analysis
+                            <span class="framework-number">1.</span> <strong>Safety Intelligence Research Framework (I-SIRch):</strong> Sociotechnical categories based on SEIPS model - Person factors (staff performance, decision errors), Job/Task factors (care planning, monitoring), Organisation factors (team culture, communication), Technologies & Tools (equipment issues), Environment factors (physical layout, external pressures).
                         </div>
                         <div class="framework-item">
-                            <span class="framework-number">2.</span> <strong>Black Maternal Health Framework:</strong> Equity dimensions extracted from House of Commons Committee report on Black maternal health
+                            <span class="framework-number">2.</span> <strong>Black Maternal Health Framework:</strong> Equity dimensions from House of Commons Committee report - Communication (dismissed concerns), Fragmented care (poorly coordinating providers), Consent/agency (informed decisions), Dignity/respect (discrimination faced), Care quality issues (microaggressions, racism), Socioeconomic factors and deprivation.
                         </div>
                         <div class="framework-item">
-                            <span class="framework-number">3.</span> <strong>Extended Safety Framework:</strong> Emerging themes including structural inequities and digital access barriers from textual analysis
+                            <span class="framework-number">3.</span> <strong>Extended Safety Framework:</strong> Emerging themes from textual analysis - Medication safety, Diagnostic testing & specimen handling, Time-critical interventions, Human factors & cognitive aspects, Service design & patient flow, Emergency preparedness, Staff wellbeing & burnout, Electronic health record issues.
                         </div>
 
                         <div class="highlight-box">
-                            <strong>Triangulation Approach:</strong> Multiple frameworks enable comprehensive thematic coverage while revealing framework-specific blind spots in safety concerns identification.
+                            <strong>Triangulation Approach:</strong> Simultaneous analysis across three frameworks enables comprehensive coverage while revealing framework-specific blind spots in safety investigation and maintaining analytical rigor.
                         </div>
 
-                        <div class="key-finding">
-                            <strong>I-SIRch Framework Categories:</strong> Person factors, Job/Task factors, Organisation factors, Technologies & Tools, Environment factors.
-                        </div>
 
-                        <div class="highlight-box">
-                            <strong>Framework Integration:</strong> Simultaneous analysis across all three frameworks ensures comprehensive coverage of safety factors while maintaining analytical rigor.
-                        </div>
+
+
                     </div>
                 </div>
 
                 <div class="section">
                     <div class="section-title">PFD vs HSIB Comparison</div>
                     <div class="section-content">
-                        <p>Comparison with previous I-SIRch analysis of 188 HSIB reports reveals different safety priorities:</p>
-                        
                         <div class="comparison-table">
                             <div class="comparison-header">
                                 <div><strong>PFD Reports (n=51)</strong></div>
                                 <div><strong>HSIB Reports (n=188)</strong></div>
                             </div>
                             <div class="comparison-row">
-                                <div>Medication Safety (78.4%)</div>
+                                <div>Medication Safety (*) (78.4%)</div>
                                 <div>Communication Factor (84.6%)</div>
                             </div>
                             <div class="comparison-row">
-                                <div>Staff Performance (78.4%)</div>
+                                <div>Staff Performance (+) (78.4%)</div>
                                 <div>Teamworking (82.4%)</div>
                             </div>
                             <div class="comparison-row">
-                                <div>Team Culture (74.5%)</div>
+                                <div>Team Culture (+) (74.5%)</div>
                                 <div>Assessment Investigation (79.8%)</div>
                             </div>
                             <div class="comparison-row">
-                                <div>Consent/Agency (66.7%)</div>
+                                <div>Consent/Agency (-) (66.7%)</div>
                                 <div>Patient Physical Characteristics (62.8%)</div>
                             </div>
                             <div class="comparison-row">
-                                <div>Decision Errors (41.2%)</div>
-                                <div>Decision Errors (47.3%)</div>
+                                <div>Diagnostic Testing & Specimens (*) (64.7%)</div>
+                                <div>Staff-Slip or Lapse (52.7%)</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div>Patient Record Attendance (+) (62.7%)</div>
+                                <div>Escalation/Referral Factor (51.6%)</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div>Physical Layout & Environment (+) (56.9%)</div>
+                                <div>National & Local Guidance (48.9%)</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div>Staff Decision Error (+) (41.2%)</div>
+                                <div>Technologies & Tools-Interpretation (47.9%)</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div>Peer Support & Supervision (*) (39.2%)</div>
+                                <div>Obstetric Review (47.3%)</div>
+                            </div>
+                            <div class="comparison-row">
+                                <div>External Societal Factor (+) (39.2%)</div>
+                                <div>Staff Decision Error (47.3%)</div>
                             </div>
                         </div>
 
                         <div class="highlight-box">
-                            <strong>Judicial vs Investigatory Focus:</strong> Coroners emphasise medication protocols and patient autonomy, reflecting legal accountability concerns, while investigators prioritise team communication and coordination processes.
+                            <strong>House of Commons Themes in PFD Reports:</strong> Consent/Agency ranked 4th (66.7%), followed by Guidance gaps (37.3%), Care quality issues (31.4%), and Communication (29.4%).
                         </div>
 
-                        <div class="key-finding">
-                            <strong>Cross-System Validation:</strong> Both reporting systems recognise human judgement factors as significant, confirming consistent identification of staff decision-making challenges across different assessment approaches.
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -710,38 +722,30 @@
                             </div>
                         </div>
 
-                        <div class="key-finding">
-                            <strong>Algorithm Specifications:</strong> Dual-scoring system: 70% semantic similarity weight + 30% keyword density. Confidence thresholds: High (≥0.7), Medium (0.5-0.7), Low (<0.5).
-                        </div>
-
                         <p><strong>Data Processing Pipeline:</strong></p>
                         <ul>
-                            <li>Text preprocessing with regex normalisation & stop-word removal</li>
-                            <li>BERT tokenisation with 512-token truncation and padding</li>
                             <li>768-dimensional embeddings via Bio_ClinicalBERT CLS token representation</li>
-                            <li>Keyword matching with sentence boundary detection for highlighting</li>
-                            <li>Dual similarity scoring: cosine similarity + keyword density weighting</li>
                             <li>Multi-framework threshold classification with confidence scoring</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="section">
+                <div class="section" style="padding: 20px;">
                     <div class="section-title">Conclusions & Impact</div>
                     <div class="section-content">
                         <div class="highlight-box">
-                            <strong>Clinical Implications:</strong> Judicial assessments reveal distinct safety priorities focused on legal accountability and patient rights, providing unique insights complementary to traditional incident investigation approaches.
+                            <strong>Clinical Implications:</strong> PFD reports identify system-level failures not apparent through individual healthcare provider investigations, providing unique insights that complement existing safety surveillance systems.
                         </div>
 
                         <div class="highlight-box">
-                            <strong>Model Performance Insights:</strong> Our refined ClinicalBERT model showed improved performance in identifying clinical themes like Medication Safety but had limitations with broader systemic factors. The triangulation approach allows comprehensive thematic coverage while revealing framework-specific blindspots in safety concerns identification.
+                            <strong>Research Impact:</strong> This first systematic analysis of maternity-related PFD reports establishes a novel data source for patient safety intelligence. The findings reveal priority areas spanning clinical practice, organisational culture, and patient rights, providing evidence for comprehensive safety improvement initiatives across UK maternity care systems.
                         </div>
 
                         <div class="key-finding">
-                            <strong>Future Directions:</strong> Systematic PFD analysis can inform targeted interventions for medication safety protocols and informed consent processes in maternity care.
+                            <strong>Future Directions:</strong> Development of a unified framework applicable across healthcare specialties including maternity, mental health, and other clinical domains to enable cross-specialty learning and comparative safety analysis. Integration with existing incident reporting systems could enhance cross-organisational learning from judicial investigations.
                         </div>
 
-                        <p><strong>Study Limitations:</strong> Ethnicity data was not available in the PFD reports, preventing evaluation of theme performance across different ethnic groups.</p>
+                        <p><strong>Study Limitations:</strong> Ethnicity data was not available as PFD reports focus on systemic issues rather than demographic characteristics (mandated by Coroners and Justice Act 2009), preventing evaluation of theme performance across different ethnic groups.</p>
                     </div>
                 </div>
             </div>
@@ -752,48 +756,53 @@
             <div class="images-title">Research Results & Analysis</div>
             
             <div class="images-container">
-                <!-- Column 1: Figures 1, 2, 3 & 4 -->
+                <!-- Column 1: Figures 1 & 2 -->
                 <div class="images-column">
                     <div class="image-container small">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture4.png" alt="Picture 4">
                         <div class="image-caption">Figure 1: Picture 4 Analysis</div>
                     </div>
-
-                    <div class="image-container small">
-                        <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture1.png" alt="Eclipse Morrison Case Study">
-                        <div class="image-caption">Figure 2: I-SIRch Tool Analysis - Eclipse Morrison Case</div>
-                    </div>
                     
                     <div class="image-container large">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture2.png" alt="Text Analysis">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture3.png" alt="Multi-Framework Theme Analysis">
-                        <div class="image-caption">Figure 3: Text Analysis & Framework Mapping</div>
+                        <div class="image-caption">Figure 2: Text Analysis & Framework Mapping</div>
                     </div>
                 </div>
 
-                <!-- Column 2: Figures 4 & 5 -->
+                <!-- Column 2: Figures 4, 5 & 6 -->
                 <div class="images-column">
                     <div class="image-container">
+                        <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Picture1.png" alt="Eclipse Morrison Case Study">
+                        <div class="image-caption">Figure 4: I-SIRch Tool Analysis - Eclipse Morrison Case</div>
+                    </div>
+                    
+                    <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/Region.png" alt="Regional Analysis">
-                        <div class="image-caption">Figure 4: Regional Distribution Analysis</div>
+                        <div class="image-caption">Figure 5: Regional Distribution Analysis</div>
                     </div>
                     
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/region2.png" alt="Detailed Regional Analysis">
-                        <div class="image-caption">Figure 5: Detailed Regional Distribution</div>
+                        <div class="image-caption">Figure 6: Detailed Regional Distribution</div>
                     </div>
                 </div>
 
-                <!-- Column 3: Figures 6 & 7 -->
+                <!-- Column 3: Figures 7, 8 & 9 -->
                 <div class="images-column">
                     <div class="image-container">
+                        <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/maternalmortality.jpg" alt="Maternal Mortality Analysis">
+                        <div class="image-caption">Figure 7: Maternal Mortality Trends</div>
+                    </div>
+                    
+                    <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themecooccdistribution.png" alt="Theme Co-occurrence">
-                        <div class="image-caption">Figure 6: Top 15 Theme Co-occurrence Network</div>
+                        <div class="image-caption">Figure 8: Top 15 Theme Co-occurrence Network</div>
                     </div>
                     
                     <div class="image-container">
                         <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themedistribution.png" alt="Theme Distribution">
-                        <div class="image-caption">Figure 7: Top 15 Theme Distribution by Year</div>
+                        <div class="image-caption">Figure 9: Top 15 Theme Distribution by Year</div>
                     </div>
                 </div>
             </div>
@@ -803,7 +812,7 @@
         <div class="footer">
             <div class="footer-content">
                 <div>
-                    <strong>Funding:</strong> Jointly funded by The Health Foundation and NHS AI Lab at NHS Transformation Directorate, supported by NIHR. Project: "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006<br><br>
+                    <strong>Funding:</strong> The work was jointly funded by The Health Foundation and the NHS AI Lab at the NHS Transformation Directorate, and supported by the National Institute for Health Research. The project is entitled "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006.<br><br>
                     <strong>Contact:</strong> Georgina Cosma - g.cosma@lboro.ac.uk | <strong>Data:</strong> Publicly accessible coroners' reports from UK Judiciary website | <strong>Ethics:</strong> No ethical approval required for public data analysis
                 </div>
                 <div class="qr-placeholder">
