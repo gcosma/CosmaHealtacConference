@@ -314,8 +314,8 @@
         }
 
         .framework-item {
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-            border: 1px solid #2196f3;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+            border: 1px solid #4a90e2;
             border-radius: 10px;
             padding: 12px;
             font-size: 0.9em;
@@ -324,7 +324,7 @@
 
         .framework-number {
             font-weight: bold;
-            color: #0d47a1;
+            color: #2c5aa0;
         }
 
         .pipeline-box {
@@ -519,7 +519,7 @@
                             </div>
                         </div>
 
-                        <p><strong>Data Collection Method:</strong> Specialised web scraping tool extracted PFD reports from UK Judiciary website using maternal healthcare search terms: Midwifery, Birth, Baby, Maternal, Infant, Obstetrics, Neonatal, Perinatal, Pregnancy, Postnatal, Antenatal, Maternity, Stillbirth, Antepartum, Foetal.</p>
+                        <p><strong>Data Collection Method:</strong> Specialised web scraping tool extracted PFD reports from UK Judiciary website using maternal healthcare search terms: midwifery, birth, baby, maternal, infant, obstetrics, neonatal, perinatal, pregnancy, postnatal, antenatal, maternity, stillbirth, antepartum, foetal.</p>
                     </div>
                 </div>
 
@@ -541,7 +541,7 @@
                                 <span class="theme-percent">74.5%</span>
                             </div>
                             <div class="theme-row">
-                                <span>Informed Consent/Agency (-)</span>
+                                <span>Informed consent/agency (-)</span>
                                 <span class="theme-percent">66.7%</span>
                             </div>
                             <div class="theme-row">
@@ -581,13 +581,13 @@
                         <p><strong>Three Complementary Frameworks:</strong></p>
                         
                         <div class="framework-item">
-                            <span class="framework-number">1.</span> <strong>Safety Intelligence Research framework (I-SIRch):</strong> Sociotechnical categories based on SEIPS model - Person factors (staff performance, decision errors), Job/Task factors (care planning, monitoring), Organisation factors (team culture, communication), Technologies & Tools (equipment issues), Environment factors (physical layout, external pressures).
+                            <span class="framework-number">1.</span> <strong>Safety Intelligence Research framework (I-SIRch):</strong> Sociotechnical categories based on SEIPS model - person factors (staff performance, decision errors), job/task factors (care planning, monitoring), organisation factors (team culture, communication), technologies & tools (equipment issues), environment factors (physical layout, external pressures).
                         </div>
                         <div class="framework-item">
-                            <span class="framework-number">2.</span> <strong>Black Maternal Health framework:</strong> Equity dimensions from House of Commons Women & Equalities Committee report - Communication (dismissed concerns), Fragmented care (poorly coordinating providers), Informed consent/agency (informed decisions), Dignity/respect (discrimination faced), Care quality issues (microaggressions, racism), Socioeconomic factors and deprivation.
+                            <span class="framework-number">2.</span> <strong>Black maternal health framework:</strong> Equity dimensions from House of Commons Women & Equalities Committee report - communication (dismissed concerns), fragmented care (poorly coordinating providers), informed consent/agency (informed decisions), dignity/respect (discrimination faced), care quality issues (microaggressions, racism), socioeconomic factors and deprivation.
                         </div>
                         <div class="framework-item">
-                            <span class="framework-number">3.</span> <strong>Extended Safety framework:</strong> Emerging themes from textual analysis - Medication safety, Diagnostic testing & specimen handling, Time-critical interventions, Human factors & cognitive aspects, Service design & patient flow, Emergency preparedness, Staff wellbeing & burnout, Electronic health record issues.
+                            <span class="framework-number">3.</span> <strong>Extended safety framework:</strong> Emerging themes from textual analysis - medication safety, diagnostic testing & specimen handling, time-critical interventions, human factors & cognitive aspects, service design & patient flow, emergency preparedness, staff wellbeing & burnout, electronic health record issues.
                         </div>
 
                         <div class="highlight-box">
@@ -621,8 +621,8 @@
                                 <div>Assessment Investigation (79.8%)</div>
                             </div>
                             <div class="comparison-row">
-                                <div>Informed Consent/Agency (-) (66.7%)</div>
-                                <div>Patient Physical Characteristics (62.8%)</div>
+                                <div>Informed consent/agency (-) (66.7%)</div>
+                                <div>Patient physical characteristics (62.8%)</div>
                             </div>
                             <div class="comparison-row">
                                 <div>Diagnostic Testing & Specimens (*) (64.7%)</div>
@@ -651,7 +651,7 @@
                         </div>
 
                         <div class="highlight-box">
-                            <strong>House of Commons Women & Equalities Committee themes in PFD reports:</strong> Informed Consent/Agency ranked 4th (66.7%), followed by Guidance gaps (37.3%), Care quality issues (31.4%), and Communication (29.4%).
+                            <strong>House of Commons Women & Equalities Committee themes in PFD reports:</strong> informed consent/agency ranked 4th (66.7%), followed by guidance gaps (37.3%), care quality issues (31.4%), and communication (29.4%).
                         </div>
 
 
@@ -665,68 +665,36 @@
                     <div class="section-title">Technical Architecture</div>
                     <div class="section-content">
                         <div class="pipeline-box">
-                            <div class="pipeline-title">🔧 ML Pipeline Architecture</div>
+                            <div class="pipeline-title">🔧 Enhanced ML Pipeline with Implementation Details</div>
                             <div class="pipeline-steps">
                                 <div class="pipeline-step">
                                     <div class="step-number">1</div>
-                                    <div>Web Scraping (BeautifulSoup4)</div>
+                                    <div><strong>🌐 Automated Web Scraping</strong><br>BeautifulSoup4 + rate-limited batch processing with PDF extraction</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">2</div>
-                                    <div>NLP Preprocessing (NLTK)</div>
+                                    <div><strong>🔧 Intelligent Data Preparation</strong><br>Multi-file merging, deduplication, temporal extraction & content validation</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">3</div>
-                                    <div>BERT Embeddings</div>
+                                    <div><strong>📊 Exploratory Analysis</strong><br>Interactive dashboards with quality metrics & distribution visualisation</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">4</div>
-                                    <div>Cosine Similarity</div>
+                                    <div><strong>📝 Advanced Text Processing & Summarisation</strong><br>Custom vectorisation methods (TF-IDF, BM25, weighted TF-IDF schemes) with LDA topic modelling, agglomerative hierarchical clustering & template-based abstractive summarisation</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">5</div>
-                                    <div>Threshold Classification</div>
+                                    <div><strong>🤖 Multi-Framework Concept Annotation</strong><br>Bio_ClinicalBERT 768D embeddings + 200-char contextual windows with hybrid scoring (70% semantic + 30% keyword) and adaptive thresholds (0.3-0.9) across the three frameworks</div>
                                 </div>
                                 <div class="pipeline-step">
                                     <div class="step-number">6</div>
-                                    <div>Confidence Scoring</div>
+                                    <div><strong>📈 Interactive Theme Dashboard</strong><br>Correlation analysis, temporal trends, heatmaps & three-tier confidence visualisation</div>
                                 </div>
                             </div>
                         </div>
 
-                        <p><strong>Core Technical Stack:</strong></p>
-                        <div class="tech-grid">
-                            <div class="tech-item">
-                                <div class="tech-icon">🤖</div>
-                                <div class="tech-content">
-                                    <strong>Transformers:</strong> HuggingFace Bio_ClinicalBERT tokenizer & model
-                                </div>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">🧮</div>
-                                <div class="tech-content">
-                                    <strong>NumPy/PyTorch:</strong> Tensor operations & similarity calculations
-                                </div>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">📊</div>
-                                <div class="tech-content">
-                                    <strong>Scikit-learn:</strong> Cosine similarity & clustering algorithms
-                                </div>
-                            </div>
-                            <div class="tech-item">
-                                <div class="tech-icon">🐍</div>
-                                <div class="tech-content">
-                                    <strong>Python Libraries:</strong> Pandas data processing, regex text cleaning
-                                </div>
-                            </div>
-                        </div>
 
-                        <p><strong>Data Processing Pipeline:</strong></p>
-                        <ul>
-                            <li>768-dimensional embeddings via Bio_ClinicalBERT CLS token representation</li>
-                            <li>Multi-framework threshold classification with confidence scoring</li>
-                        </ul>
                     </div>
                 </div>
 
@@ -791,36 +759,4 @@
                 <!-- Column 3: Figures 7, 8 & 9 -->
                 <div class="images-column">
                     <div class="image-container">
-                        <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/maternalmortality.jpg" alt="Maternal Mortality Analysis">
-                        <div class="image-caption">Figure 7: Maternal Mortality Trends</div>
-                    </div>
-                    
-                    <div class="image-container">
-                        <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themecooccdistribution.png" alt="Theme Co-occurrence">
-                        <div class="image-caption">Figure 8: Top 15 Theme Co-occurrence Network</div>
-                    </div>
-                    
-                    <div class="image-container">
-                        <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/themedistribution.png" alt="Theme Distribution">
-                        <div class="image-caption">Figure 9: Top 15 Theme Distribution by Year</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <div class="footer-content">
-                <div>
-                    <strong>Funding:</strong> The work was jointly funded by The Health Foundation and the NHS AI Lab at the NHS Transformation Directorate, and supported by the National Institute for Health Research. The project is entitled "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006.<br><br>
-                    <strong>Contact:</strong> Georgina Cosma - g.cosma@lboro.ac.uk | <strong>Data:</strong> Publicly accessible coroners' reports from UK Judiciary website | <strong>Ethics:</strong> No ethical approval required for public data analysis
-                </div>
-                <div class="qr-placeholder">
-                    <div style="font-size: 3em; color: #6c757d;">📱</div>
-                    <div class="qr-text">QR Code<br>Full References</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+                        <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/maternalm
