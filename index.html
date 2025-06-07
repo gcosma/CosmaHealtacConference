@@ -252,7 +252,7 @@
 
         .comparison-table {
             background: white;
-            border: 2px solid #ff9800;
+            border: 2px solid #005EB8;
             border-radius: 12px;
             overflow: hidden;
             margin: 18px 0;
@@ -260,21 +260,23 @@
         }
 
         .comparison-header {
-            background: linear-gradient(135deg, #f57c00 0%, #ff9800 100%);
+            background: linear-gradient(135deg, #005EB8 0%, #003087 100%);
             color: white;
-            padding: 10px 15px;
+            padding: 12px 15px;
             font-weight: bold;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
+            text-align: center;
         }
 
         .comparison-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
-            padding: 4px 15px;
+            padding: 6px 15px;
             border-bottom: 1px solid #f0f0f0;
+            align-items: center;
         }
 
         .comparison-row:last-child {
@@ -283,6 +285,20 @@
 
         .comparison-row:nth-child(even) {
             background: #f8f9fa;
+        }
+
+        .comparison-cell {
+            text-align: left;
+        }
+
+        .comparison-percent {
+            font-weight: bold;
+            color: #003087;
+            background: rgba(0,94,184,0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin-left: 8px;
         }
 
         .tech-grid {
@@ -495,12 +511,22 @@
                 <div class="section" style="padding-bottom: 35px;">
                     <div class="section-title">Prevention of Future Death Reports</div>
                     <div class="section-content">
+                        <p><strong>Introduction:</strong> Despite UK government goals to reduce maternal deaths by 50% by 2025, maternal mortality rates increased by 3% between 2010-2012 and 2018-2020 (excluding COVID-19 deaths).</p>
+
+                        <div style="text-align: center; margin: 20px 0;">
+                            <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/maternalmortality.jpg" alt="Maternal Mortality Trends" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); min-height: 200px; background: #f0f0f0; object-fit: contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display: none; width: 100%; height: 200px; background: #f0f0f0; border: 2px dashed #ccc; border-radius: 8px; align-items: center; justify-content: center; flex-direction: column; color: #666;">
+                                <div style="font-size: 2em; margin-bottom: 10px;">📊</div>
+                                <div style="font-weight: bold;">Figure 1: Maternal Mortality Trends</div>
+                                <div style="font-size: 0.9em; margin-top: 5px;">Image: maternalmortality.jpg</div>
+                            </div>
+                            <div style="margin-top: 10px; font-size: 1.1em; color: #666; font-style: italic; font-weight: 600;">Figure 1: Maternal Mortality Trends</div>
+                        </div>
+
                         <div class="highlight-box">
                             <strong>What are PFD Reports?</strong><br>
                             Independent judicial assessments issued by coroners following inquests into unexpected deaths, providing cross-organisational perspectives on patient safety issues.
                         </div>
-
-                        <p><strong>Research Challenge:</strong> Despite UK government goals to reduce maternal deaths by 50% by 2025, maternal mortality rates increased by 3% between 2010-2012 and 2018-2020 (excluding COVID-19 deaths).</p>
 
                         <div class="key-finding">
                             <strong>Research Gap:</strong> Maternal and neonatal deaths have not been systematically analysed across PFD reports despite persistent disparities in maternal mortality.
@@ -525,54 +551,7 @@
                     </div>
                 </div>
 
-                <div class="section" style="padding-bottom: 0px;">
-                    <div class="section-title">Key Results</div>
-                    <div class="section-content">
-                        <div class="results-table">
-                            <div class="table-header">Top Safety Themes in PFD reports</div>
-                            <div class="theme-row top-theme">
-                                <span>Medication Safety (*)</span>
-                                <span class="theme-percent">78.4%</span>
-                            </div>
-                            <div class="theme-row top-theme">
-                                <span>Staff Performance (+)</span>
-                                <span class="theme-percent">78.4%</span>
-                            </div>
-                            <div class="theme-row">
-                                <span>Team Culture (+)</span>
-                                <span class="theme-percent">74.5%</span>
-                            </div>
-                            <div class="theme-row">
-                                <span>Informed consent/agency (-)</span>
-                                <span class="theme-percent">66.7%</span>
-                            </div>
-                            <div class="theme-row">
-                                <span>Diagnostic Testing & Specimens (*)</span>
-                                <span class="theme-percent">64.7%</span>
-                            </div>
-                            <div class="theme-row">
-                                <span>Patient Record Attendance (+)</span>
-                                <span class="theme-percent">62.7%</span>
-                            </div>
-                            <div class="theme-row">
-                                <span>Physical Layout & Environment (+)</span>
-                                <span class="theme-percent">56.9%</span>
-                            </div>
-                            <div class="theme-row">
-                                <span>Staff Decision Error (+)</span>
-                                <span class="theme-percent">41.2%</span>
-                            </div>
-                        </div>
 
-                        <p style="font-size: 0.8em; margin-top: 10px;"><strong>Framework legend:</strong> (*) Extended Analysis, (+) I-SIRch, (-) House of Commons Women & Equalities Committee</p>
-
-                        <div class="key-finding">
-                            <strong>Key finding:</strong> Medication Safety and Staff Characteristics are joint highest priorities in judicial assessments of maternity deaths.
-                        </div>
-
-
-                    </div>
-                </div>
             </div>
 
             <!-- Column 2 -->
@@ -611,44 +590,44 @@
                                 <div><strong>HSIB reports (n=188)</strong></div>
                             </div>
                             <div class="comparison-row">
-                                <div>Medication Safety (*) (78.4%)</div>
-                                <div>Communication Factor (84.6%)</div>
+                                <div class="comparison-cell">Medication Safety (*) <span class="comparison-percent">78.4%</span></div>
+                                <div class="comparison-cell">Communication Factor <span class="comparison-percent">84.6%</span></div>
                             </div>
                             <div class="comparison-row">
-                                <div>Staff Performance (+) (78.4%)</div>
-                                <div>Teamworking (82.4%)</div>
+                                <div class="comparison-cell">Staff Performance (+) <span class="comparison-percent">78.4%</span></div>
+                                <div class="comparison-cell">Teamworking <span class="comparison-percent">82.4%</span></div>
                             </div>
                             <div class="comparison-row">
-                                <div>Team Culture (+) (74.5%)</div>
-                                <div>Assessment Investigation (79.8%)</div>
+                                <div class="comparison-cell">Team Culture (+) <span class="comparison-percent">74.5%</span></div>
+                                <div class="comparison-cell">Assessment Investigation <span class="comparison-percent">79.8%</span></div>
                             </div>
                             <div class="comparison-row">
-                                <div>Informed consent/agency (-) (66.7%)</div>
-                                <div>Patient physical characteristics (62.8%)</div>
+                                <div class="comparison-cell">Informed consent/agency (-) <span class="comparison-percent">66.7%</span></div>
+                                <div class="comparison-cell">Patient physical characteristics <span class="comparison-percent">62.8%</span></div>
                             </div>
                             <div class="comparison-row">
-                                <div>Diagnostic Testing & Specimens (*) (64.7%)</div>
-                                <div>Staff-Slip or Lapse (52.7%)</div>
+                                <div class="comparison-cell">Diagnostic Testing & Specimens (*) <span class="comparison-percent">64.7%</span></div>
+                                <div class="comparison-cell">Staff-Slip or Lapse <span class="comparison-percent">52.7%</span></div>
                             </div>
                             <div class="comparison-row">
-                                <div>Patient Record Attendance (+) (62.7%)</div>
-                                <div>Escalation/Referral Factor (51.6%)</div>
+                                <div class="comparison-cell">Patient Record Attendance (+) <span class="comparison-percent">62.7%</span></div>
+                                <div class="comparison-cell">Escalation/Referral Factor <span class="comparison-percent">51.6%</span></div>
                             </div>
                             <div class="comparison-row">
-                                <div>Physical Layout & Environment (+) (56.9%)</div>
-                                <div>National & Local Guidance (48.9%)</div>
+                                <div class="comparison-cell">Physical Layout & Environment (+) <span class="comparison-percent">56.9%</span></div>
+                                <div class="comparison-cell">National & Local Guidance <span class="comparison-percent">48.9%</span></div>
                             </div>
                             <div class="comparison-row">
-                                <div>Staff Decision Error (+) (41.2%)</div>
-                                <div>Technologies & Tools-Interpretation (47.9%)</div>
+                                <div class="comparison-cell">Staff Decision Error (+) <span class="comparison-percent">41.2%</span></div>
+                                <div class="comparison-cell">Technologies & Tools-Interpretation <span class="comparison-percent">47.9%</span></div>
                             </div>
                             <div class="comparison-row">
-                                <div>Peer Support & Supervision (*) (39.2%)</div>
-                                <div>Obstetric Review (47.3%)</div>
+                                <div class="comparison-cell">Peer Support & Supervision (*) <span class="comparison-percent">39.2%</span></div>
+                                <div class="comparison-cell">Obstetric Review <span class="comparison-percent">47.3%</span></div>
                             </div>
                             <div class="comparison-row">
-                                <div>External Societal Factor (+) (39.2%)</div>
-                                <div>Staff Decision Error (47.3%)</div>
+                                <div class="comparison-cell">External Societal Factor (+) <span class="comparison-percent">39.2%</span></div>
+                                <div class="comparison-cell">Staff Decision Error <span class="comparison-percent">47.3%</span></div>
                             </div>
                         </div>
 
