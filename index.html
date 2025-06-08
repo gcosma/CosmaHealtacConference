@@ -1,4 +1,4 @@
-<div class="section" style="padding<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -123,9 +123,6 @@
             border: 1px solid #e9ecef;
             position: relative;
             overflow: hidden;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
         }
 
         .section::before {
@@ -153,7 +150,6 @@
         .section-content {
             font-size: 1.6em;
             line-height: 1.5;
-            flex: 1;
         }
 
         .highlight-box {
@@ -330,7 +326,7 @@
             border-radius: 8px;
             padding: 10px;
             text-align: center;
-            font-size: 0.9em;
+            font-size: 0.8em;
         }
 
         .step-number {
@@ -475,7 +471,7 @@
         <div class="content-section">
             <!-- Column 1 -->
             <div class="column">
-                <div class="section" style="padding-bottom: 5px;">
+                <div class="section" style="padding-bottom: 35px;">
                     <div class="section-title">Prevention of Future Death (PFD) Reports</div>
                     <div class="section-content">
                         <p><strong>Introduction:</strong> Despite UK government goals to reduce maternal deaths by 50% by 2025, maternal mortality rates increased by 3% between 2010-2012 and 2018-2020 (excluding COVID-19 deaths).</p>
@@ -520,11 +516,6 @@
                         </div>
 
                         <p><strong>Data Collection Method:</strong> Specialised web scraping tool extracted PFD reports from UK Judiciary website using maternal healthcare search terms including: midwifery, birth, baby, maternal, infant, obstetrics, neonatal, perinatal, pregnancy, postnatal, antenatal, maternity, stillbirth, antepartum, foetal/foetal.</p>
-                        
-                        <div class="key-finding" style="margin: 15px 0;">
-                            <strong>Data Source:</strong> Publicly accessible coroners' reports from UK Judiciary website<br>
-                            <strong>Ethics:</strong> No ethical approval required for public data analysis
-                        </div>
                     </div>
                 </div>
             </div>
@@ -555,7 +546,7 @@
                 <div class="section">
                     <div class="section-title">PFD vs HSIB Comparison</div>
                     <div class="section-content">
-                        <div class="comparison-table" style="margin: 0;">
+                        <div class="comparison-table">
                             <div class="comparison-header">
                                 <div><strong>PFD reports (n=51)</strong></div>
                                 <div><strong>HSIB reports (n=188)</strong></div>
@@ -671,12 +662,12 @@
 
             <!-- Column 3 -->
             <div class="column">
-                <div class="section" style="padding-bottom: 5px;">
+                <div class="section" style="padding-bottom: 35px;">
                     <div class="section-title">Technical Architecture</div>
                     <div class="section-content">
                         <div class="pipeline-box">
-                            <div class="pipeline-title">🔧 Enhanced AI Processing Pipeline with Implementation Details</div>
-                            <div class="pipeline-steps" style="font-size: 0.95em;">
+                            <div class="pipeline-title">🔧 Enhanced ML Pipeline with Implementation Details</div>
+                            <div class="pipeline-steps">
                                 <div class="pipeline-step">
                                     <div class="step-number">1</div>
                                     <div><strong>🌐 Automated Web Scraping</strong><br>BeautifulSoup4 + rate-limited batch processing with PDF extraction & regex-based metadata parsing</div>
@@ -708,7 +699,7 @@
 
                 <div class="section" style="padding-bottom: 30px;">
                     <div class="section-title">Conclusions & Impact</div>
-                    <div class="section-content" style="font-size: 1.65em;">
+                    <div class="section-content">
                         <div class="highlight-box">
                             <strong>Clinical implications:</strong> PFD reports identify system-level failures not apparent through individual healthcare provider investigations, providing unique insights that complement existing incident reporting systems.
                         </div>
@@ -720,8 +711,6 @@
                         <div class="key-finding">
                             <strong>Future directions:</strong> Development of a unified framework applicable across healthcare specialities including maternity, mental health, and other clinical domains to enable cross-speciality learning and comparative safety analysis.
                         </div>
-
-                        <div style="height: 1em;"></div>
 
                         <p><strong>Study Limitations:</strong> Ethnicity data was not available as PFD reports focus on systemic issues rather than demographic characteristics.</p>
                     </div>
@@ -800,7 +789,8 @@
         <div class="footer">
             <div class="footer-content">
                 <div>
-                    <strong>Funding:</strong> The work was jointly funded by The Health Foundation and the NHS AI Lab at the NHS Transformation Directorate, and supported by the National Institute for Health Research. The project is entitled "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006.
+                    <strong>Funding:</strong> The work was jointly funded by The Health Foundation and the NHS AI Lab at the NHS Transformation Directorate, and supported by the National Institute for Health Research. The project is entitled "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006.<br><br>
+                    <strong>Data:</strong> Publicly accessible coroners' reports from UK Judiciary website | <strong>Ethics:</strong> No ethical approval required for public data analysis
                     
                     <div class="contact-info">
                         <strong>Contact:</strong><br>
