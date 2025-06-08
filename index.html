@@ -395,26 +395,27 @@
         .footer {
             background: linear-gradient(135deg, #005EB8 0%, #003087 100%);
             color: white;
-            padding: 20px 30px;
-            font-size: 1.1em;
+            padding: 25px 30px;
+            font-size: 1.3em;
             text-align: left;
-            line-height: 1.4;
+            line-height: 1.5;
             flex-shrink: 0;
             margin-top: auto;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
         }
 
         .footer-content {
             display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 30px;
+            grid-template-columns: 1fr auto auto;
+            gap: 40px;
             align-items: center;
         }
 
         .contact-info {
-            margin-top: 15px;
-            padding-top: 10px;
-            border-top: 1px solid rgba(255,255,255,0.3);
-            font-size: 0.95em;
+            margin-top: 18px;
+            padding-top: 15px;
+            border-top: 2px solid rgba(255,255,255,0.4);
+            font-size: 1.0em;
         }
 
         .qr-placeholder {
@@ -423,9 +424,31 @@
         }
 
         .qr-text {
-            font-size: 0.9em;
-            margin-top: 8px;
+            font-size: 1.0em;
+            margin-top: 10px;
             color: white;
+            font-weight: 600;
+        }
+
+        .logo-section {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-section img {
+            width: 140px;
+            height: auto;
+            filter: brightness(0) invert(1);
+            opacity: 0.95;
+        }
+
+        .logo-text {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: rgba(255,255,255,0.9);
         }
 
         ul {
@@ -804,9 +827,7 @@
                     <strong>Funding:</strong> The work was jointly funded by The Health Foundation and the NHS AI Lab at the NHS Transformation Directorate, and supported by the National Institute for Health Research. The project is entitled "I-SIRch - Using Artificial Intelligence to Improve the Investigation of Factors Contributing to Adverse Maternity Incidents involving Black Mothers and Families" AI_HI200006.
                     
                     <div class="contact-info">
-                        <strong>Contact:</strong><br>
-                        <strong>Georgina Cosma</strong><br>
-                        Professor of AI & Data Science<br>
+                        <strong>Contact: Georgina Cosma, Professor of AI & Data Science</strong><br>
                         Department of Computer Science, Loughborough University, Loughborough, LE11 3TU<br>
                         <strong>Email:</strong> g.cosma@lboro.ac.uk | <strong>Tel:</strong> +44 (0)1509 564 158 | <strong>Twitter:</strong> @gcosma1
                     </div>
@@ -814,6 +835,13 @@
                 <div class="qr-placeholder">
                     <img src="https://raw.githubusercontent.com/gcosma/CosmaHealtacConference/main/images/qrcode_github.png" alt="QR Code" style="width: 120px; height: 120px; border-radius: 8px;">
                     <div class="qr-text">Scan for Papers</div>
+                </div>
+                <div class="logo-section">
+                    <img src="lu-logo.png" alt="Loughborough University" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div style="display:none; color: white; font-weight: bold; font-size: 1.1em; text-align: center; padding: 20px; border: 2px solid rgba(255,255,255,0.5); border-radius: 8px;">
+                        Loughborough<br>University
+                    </div>
+                    <div class="logo-text">Loughborough University</div>
                 </div>
             </div>
         </div>
